@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Tab Title -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jessica Morris ~ Co-op S26</title>
+
+  <!-- Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="border-bottom mb-5">
+  <nav class="navbar py-0">
+    <div class="container-fluid px-4">
+
+      <div class="d-flex align-items-center gap-5">
+        <a href="index.html">
+            <img src="JM.png" alt="" width="200" height="200">
+        </a>
+        <div>
+          <h1 class="mb-1">Jessica Morris</h1>
+          <p class="text-secondary mb-0">Welcome to my site.</p>
+        </div>
+      </div>
+
+      <!-- Hamburger Button -->
+      <button class="navbar-toggler border-0" type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#sideNav"
+              aria-controls="sideNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    </div>
+  </nav>
+</header>
+
+<!-- Side Bar Pop-Out -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="sideNav" aria-labelledby="sideNavLabel">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title h5 mb-0" id="sideNavLabel">Menu</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="d-flex flex-column gap-3">
+        <a href="about.html" class="btn btn-nav">About Me</a>
+        <a href="education.html" class="btn btn-nav">Education</a>
+        <a href="coop.html" class="btn btn-nav">Co-op S26</a>
+        <a href="resume.html" class="btn btn-nav">Resume</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<main class="coop">
+ <div class="coop-layout">
+
+  <!-- Sticky Jump Links -->
+  <nav class="section-nav" aria-label="Sections of this report">
+    <p class="section-nav-title">On this page</p>
+    <a href="#introduction">Introduction</a>
+    <a href="#employer">The employer</a>
+    <a href="#job">Job description</a>
+    <a href="#shadowing">Shadowing</a>
+    <a href="#beyond">Beyond the desk</a>
+    <a href="#goals">Goals</a>
+    <a href="#differently">Reflection</a>
+    <a href="#conclusions">Conclusions</a>
+    <a href="#acknowledgments">Acknowledgments</a>
+  </nav>
+
+  <div class="coop-body">
+
+  <!-- Abstract / Introduction -->
+  <section class="prose" id="introduction">
+    <p class="kicker">Kingspan Insulated Panels &middot; IT Intern &middot; Summer 2026</p>
+    <h2>Co-op Work Term Report</h2>
+    <p>
+      This is my Summer 2026 work term as an IT intern at Kingspan Insulated Panels. I wasn't
+      new when I walked in in May. I joined the team in July 2025 and spent that summer in applications,
+      building internal tools so I started this term already knowing the environment and the people.
+      I carried on with applications work for the first few weeks this year round, then, in mid-May, I moved across to
+      infrastructure, and I have spent the rest of the summer on an RMM migration and network monitoring.
+    </p>
+
+    <div class="stats mt-4">
+      <div class="stat" style="--accent:#de3131"><b>4</b><span>months, May to August 2026</span></div>
+      <div class="stat" style="--accent:#09b01a"><b>[1500+]</b><span>endpoints migrated to a new RMM</span></div>
+      <div class="stat" style="--accent:#d8cee4"><b>6</b><span>teams shadowed across the department</span></div>
+      <div class="stat" style="--accent:#fad337"><b>1</b><span>AI bootcamp in Florida</span></div>
+    </div>
+  </section>
+
+  <!-- Employer -->
+  <section id="employer">
+    <p class="kicker">The employer</p>
+    <h2>Kingspan Insulated Panels</h2>
+
+    <div class="prose mb-4">
+      <p>
+        Kingspan is a global manufacturer of insulated panels and insulation for commercial and industrial
+        buildings. I work out of the <strong>Caledon</strong> site, embedded in the IT department that
+        supports all of North America.
+      </p>
+      <p>
+        The past 4 months I have observed how computer science is applied outside of school at an enterprise level. I have learnt about
+        infrastructure, networking, endpoint management, identity, and the business applications a
+        manufacturer runs on. It is a pretty different discipline from the one my courses have described.
+        Coursework rewards building something new and correct in order to learn, this environment rewards familiarizing yourself with something
+        old, pre-existing, and load-bearing while you improve it. Almost nothing here starts from an empty file.
+      </p>
+    </div>
+
+    <div class="imgband">
+
+      <figure class="shot">
+        <div class="frame">
+          <img src="panel.png" alt="Kingspan insulated panels">
+        </div>
+        <figcaption>
+          <b>Product</b>
+          Insulated Panels ~ ex. QuadCore® KS Series Wall Panel
+        </figcaption>
+      </figure>
+
+      <figure class="shot">
+        <div class="frame">
+          <img src="caledon.jpeg" alt="The Caledon plant">
+        </div>
+        <figcaption>
+          <b>Caledon</b>
+          Caledon Office and Plant
+        </figcaption>
+      </figure>
+
+      <figure class="shot">
+        <div class="frame">
+          <img src="guelphStorage.jpeg" alt="A completed Kingspan project">
+        </div>
+        <figcaption>
+          <b>A finished project</b>
+          Apple Self Storage. Guelph, ON
+        </figcaption>
+      </figure>
+
+    </div>
+
+    <div class="tiles">
+      <div class="tile" style="--tile:#fad337">
+        <span class="tag">What they make</span>
+        <h3>Panels, at scale</h3>
+        <p>High-performance insulated panels and insulation, manufactured on site. </p>
+      </div>
+      <div class="tile" style="--tile:#3486eb">
+        <span class="tag">The IT department</span>
+        <h3>Small team, big responsibility</h3>
+        <p>Systems engineering, system administration, service delivery, security, applications, and data analytics. All six of which I got to shadow over the year.</p>
+      </div>
+      <div class="tile" style="--tile:#09b01a">
+        <span class="tag">Planet Passionate</span>
+        <h3>Sustainability, counted on</h3>
+        <p>Kingspan's global program Planet Passionate covering carbon, energy, water, and circularity (and the reason I spent some time on a site cleanup instead of at my desk.)</p>
+      </div>
+      <div class="tile" style="--tile:#d8cee4">
+        <span class="tag">What surprised me</span>
+        <h3>IT with a plant floor</h3>
+        <p>Downtime here isn't always just an inconvenienced spreadsheet, it's production. That changes how carefully you plan a change, and it's the clearest difference between this and any project I've submitted for a grade.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Job Description -->
+  <section id="job">
+    <p class="kicker"></p>
+    <h2>Job description</h2>
+
+    <div class="prose mb-4">
+      <p>
+        In applications I assisted with app creation and website design with a touch of backend development. In infrastructure I looked after things people
+        already relied on through network montioring. This term let me do both..
+      </p>
+      <p>
+        Last year I focussed heavier on app creation through power apps and web design using CSS and HTML. This year when I first joined back I assisted with a website, but more with the backend development of it using Power Automate Flows. The project was at its near end by May so mid may I transferred teams to work on infrastructure starting with an RMM migration.
+      </p>
+      <p>
+        The handover itself was the first real test of the term. I was tidying up one project with the applications team, creating flows, testing, and writing documentation for each of the many flows that were created and funnelled directly into the next project where I had lots to learn.
+      </p>
+    </div>
+
+    <div class="tiles mb-4">
+      <div class="tile" style="--tile:#f2f2f2">
+        <span class="tag">May &middot; Applications</span>
+        <h3>Finishing what I'd started</h3>
+        <ul>
+          <li>Power Apps replacing manual processes</li>
+          <li>Power Automate flows to bridge back end to front end</li>
+          <li>UI design</li>
+          <li>Documentation</li>
+        </ul>
+      </div>
+      <div class="tile" style="--tile:#f2f2f2">
+        <span class="tag">Mid-May &ndash; August &middot; Infrastructure</span>
+        <h3>Keeping it running</h3>
+        <ul>
+          <li>RMM migration</li>
+          <li>Network monitoring: dashboards, alerting, and monitors</li>
+          <li>Communication: reaching out to associated support services, documentation, meetings</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Spotlight: RMM migration -->
+    <div class="spotlight">
+      <span class="tag">Project spotlight</span>
+      <h3>The RMM migration</h3>
+      <p>
+        An RMM (remote monitoring and management) platform is how an IT team looks after a
+        large number of machines: patching, scripting, alerting, remote access. Replacing one means touching
+        every endpoint in the business, none of which is work that is invisible to the people using them.
+      </p>
+      <p>
+        This was the first project where I wasn't working on small tasks assigned by a team. In this project it was mainly 
+        up to me and the infrastrucutre manager to guide me. I didnt have a project outline like each course gives at the 
+        start of a new assignment. It was me, Sam, many teams calls, and the new RMM left to me to learn how to use. 
+      </p>
+      <ol class="steps">
+        <li><strong>Communicate.</strong> Establish what needs to be completed.</li>
+        <li><strong>Pilot.</strong> A small, forgiving task, chosen so that failure was fixable.</li>
+        <li><strong>Stage the rollout.</strong> After learning how to set up one site step by step it was now time to roll out the rest on my own.</li>
+        <li><strong>Verify.</strong> Confirm and check-in with the infrastructure manager as the project developed.</li>
+        <li><strong>Decommission Date.</strong> It was important to have this project done by the decomission date of the old RMM so we can seemlessly monitor our endpoints with no downtime or grey areas.</li>
+      </ol>
+      <p style="margin-top:1.5rem">
+        <strong>Not everything goes to plan :</strong> Inevitably issues always come up. For me, generally device authentication was a big thing.
+        Due to these issues arising more than once it forced me to research deeper into SNMP, WMI, and reach out to get help from others. I learnt a lot
+        from the work being so hands on an I definitely learnt a lot from the supports around me to help solve these issues.
+      </p>
+      <p>
+        What I'd take to the next migration: communication is part of the deployment, not an announcement
+        that follows it. The technical work was the smaller half.
+      </p>
+    </div>
+
+    <div class="prose mb-4">
+      <p>
+        <strong>Network monitoring</strong> was the opposite learning curve. Instead of pushing change, you sit and
+        interpret. With network monitoring you learn to observe. You observe the incoming alerts, the dashboards, and even
+        learn to look out for the odd device reporting normal when it shouldnt be. Through network monitoring I learnt how to respond
+        to different level alerts, how quickly, and who to go to.
+      </p>
+    </div>
+
+    <div class="tiles">
+      <div class="tile" style="--tile:#3486eb">
+        <span class="tag">Skills from class</span>
+        <h3>What the degree gave me</h3>
+        <p>Operating Systems and Microcomputing helped give me the vocabulary to follow infrastructure conversations. UI Design and Web Design helped when making the app screen and website UI changes. Software System Development &amp; Integration for making systems talk that were never designed to.</p>
+      </div>
+      <div class="tile" style="--tile:#de3131">
+        <span class="tag">Skills from work</span>
+        <h3>What it didn't</h3>
+        <p>The entire Power Platform. RMM tooling. Reading a ticketing system. Reading a monitoring dashboard. Change control. Asking a non-technical user the question that finds the real problem.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Rotation -->
+  <section id="shadowing">
+    <p class="kicker">Shadowing</p>
+    <h2>Six Desks, One Department</h2>
+
+    <div class="prose mb-4">
+      <p>
+        Over my time in the department I sat with a member of each team, shadowing someone who specializes in that
+        area: systems engineering, system administration, service delivery, security, applications, and data
+        analytics. It's the part of the placement that I find so fascinating. In order to bring together one well rounded 
+        fully self sufficient IT department there are so many different areas to consider. Even though I've been here for over a year
+        I'm always learning new things about each team as I work through projects, reach out to others, travel, and attend meetings.
+      </p>
+      <p>
+        Sitting with six people also showed me that the same incident looks like six different problems
+        depending on which desk you're at. Service delivery sees an unhappy user; systems engineering sees a
+        design decision made two years ago; security sees exposure. None of them are wrong, and I'd never have
+        noticed that from inside just one team.
+      </p>
+    </div>
+
+    <div class="tiles">
+      <div class="tile" style="--tile:#f2f2f2">
+        <span class="tag"></span>
+        <h3>Systems Engineering</h3>
+        <p>An environment where hardware is constantly being optimized and monitored. The System engineers work hard and long hours to maintain a steady, reliable network for all sites</p>
+      </div>
+      <div class="tile" style="--tile:#f2f2f2">
+        <span class="tag"></span>
+        <h3>System Administration</h3>
+        <p>Accounts, groups, permissions, policy. I came in thinking of identity as paperwork and left understanding it as the thing almost every other system leans on as a digital foundation.</strong></p>
+      </div>
+      <div class="tile" style="--tile:#f2f2f2">
+        <span class="tag"></span>
+        <h3>Service Delivery</h3>
+        <p>The bridge between how a user describes a problem and what is actually broken. Service delivery has a great balance of diagnostic and communication skills along with practical and technical problem solving to satisfy the end user and clean up any issues.</p>
+      </div>
+      <div class="tile" style="--tile:#de3131">
+        <span class="tag">The one I want to explore more</span>
+        <h3>Security</h3>
+        <p>Risk, policy, and monitoring. Where the interesting question is never &ldquo;does it work&rdquo; but &ldquo;how could this be misused.&rdquo; This is my aligned with my area of emphasis, and shadowing it confirmed my interest where I'd love to learn more.</p>
+      </div>
+      <div class="tile" style="--tile:#f2f2f2">
+        <span class="tag"></span>
+        <h3>Applications</h3>
+        <p>Where I started. Automation can mean so much more than coding. It can mean designing, testing, and consulting. Not every automation has to be with a written coding language either. Here I saw how useful the Power Platform can be.</p>
+      </div>
+      <div class="tile" style="--tile:#f2f2f2">
+        <span class="tag"></span>
+        <h3>Data Analytics</h3>
+        <p>The reporting layer is only as good as whoever entered the data. Data analysts have a great understanding of how the plant operates, what needs to be presented, and what each value represents. Data quality turned out to be far less of a technical problem than I expected and far more of a human one.</p>
+      </div>
+    </div>
+
+    <div class="prose mt-4">
+      <p>
+        <strong>Where I'd like to go next:</strong> security. I declared my area of emphasis as cyber security and although I have not started any technical courses to do with it yet, what I have seen here has motivated me further that it is certainly a point of interest for me. The
+        shadow rotation gave me a concrete reason rather than a theoretical one. I think most people go into Computer Science assuming that they will come out as a developer but there is so much more to this department than code. The RMM migration
+        opened my eyes to a world where technicality meets practicality. I loved seeing my digital work have a physical counterpart. I do still enjoy being creative through programming so I feel now from seeing both infrastructure and applications I feel optimistic 
+        about persuing security since it seems to be a mix of both. The hardware, investigation, practicality half mixed with a degree of programmable solutions and precautions intruiges me.
+      </p>
+    </div>
+  </section>
+
+  <!-- Beyond the desk -->
+  <section id="beyond">
+    <p class="kicker">Beyond the desk</p>
+    <h2>Not all of it was at a keyboard</h2>
+
+    <div class="gallery">
+
+      <figure class="shot">
+        <div class="frame">
+          <img src="cleanup.jpg" alt="Planet Passionate cleanup">
+
+        </div>
+        <figcaption>
+          <b>Planet Passionate cleanup</b>
+          A morning spent on a site cleanup with the office under Kingspan's sustainability program.
+        </figcaption>
+      </figure>
+
+      <figure class="shot">
+        <div class="frame">
+          <img src="Florida.jpg" alt="AI bootcamp in Florida">
+        </div>
+        <figcaption>
+          <b>AI bootcamp &middot; Florida</b>
+          Flown out for a couple days of AI training with colleagues from across the business.
+        </figcaption>
+      </figure>
+
+      <figure class="shot">
+        <div class="frame">
+          <img src="image.jpg" alt="Team outing">
+        </div>
+        <figcaption>
+          <b>Team outings</b>
+          A team outing to BRKFREE. A chance to get to know everyone outside of the office through a team bulding activity.
+        </figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- Goals -->
+  <section id="goals">
+    <p class="kicker">Goals &amp; learning outcomes</p>
+    <h2>Three goals, honestly assessed</h2>
+
+    <div class="prose mb-5">
+      <p>
+        I set three learning goals at the start of the term, each with an action plan and a measure of
+        success I wrote before I knew whether I'd hit it. Here they are against what actually happened.
+      </p>
+    </div>
+
+    <!-- Goal 1 -->
+    <div class="goalcard" style="--accent:#de3131">
+      <div class="top">
+        <h3>Critical &amp; creative thinking: depth and breadth of understanding</h3>
+      </div>
+
+      <div class="block">
+        <h4>The goal</h4>
+        <p>
+          To understand IT systems and infrastructure by working real problems, not classroom versions of
+          them. To analysing an issue from more than one angle, looking for the underlying cause rather than
+          just the immediate fix, and meeting using tools with curiosity instead of hesitation. I wanted to expand my
+          habit of thinking before acting.
+        </p>
+      </div>
+
+      <div class="block">
+        <h4>How I worked at it</h4>
+        <p>
+          Diagnose independently before asking for help. Learn systems outside my assigned work through
+          documentation and questions. Keep notes on what I resolved and why.
+        </p>
+      </div>
+
+      <div class="block">
+        <h4>What actually happened</h4>
+        <p>
+          The honest version: for my first month I asked for help before I had finished reading the error
+          message. What fixed it was a rule I set for myself. Before asking anyone, I had to be able
+          to state what I had already ruled out myself. It slowed me down slightly but only at the start, and the questions I did ask got sharper because they were more precise and well adjusted. That single
+          habit did more for this goal than any tool I learned.
+        </p>
+        <p>
+          The pattern recognition came later and was the more interesting part. Once I had seen the same root cause turn up in a couple
+          different places, I stopped treating issues as individual events and started asking what they
+          had in common. That's the shift from fixing to understanding.
+        </p>
+      </div>
+
+      <div class="verdict">
+        <h4>Against my measure of success</h4>
+        <p class="mb-0">
+          I said I'd count this met if I needed less guidance over time and could explain my reasoning. Both
+          are true. I resolve a wider range of issues on my own than I could in May, and I can
+          say why, not just what. The breadth half of this goal was answered by my shadowing: six teams meant
+          six different views of the same environment.
+        </p>
+      </div>
+    </div>
+
+    <!-- Goal 2 -->
+    <div class="goalcard" style="--accent:#3486eb">
+      <div class="top">
+        <h3>Communicating: integrative communication</h3>
+      </div>
+
+      <div class="block">
+        <h4>The goal</h4>
+        <p>
+          To explain technical information clearly to whoever is listening (a non-technical end user just as
+          effectively as a colleague or my supervisor) across tickets, email, documentation, and
+          spoken updates.
+        </p>
+      </div>
+
+      <div class="block">
+        <h4>How I worked at it</h4>
+        <p>
+          Write findings down to force myself to actually understand them. Keep documentation clear enough
+          that someone else could build on it. Ask for feedback and use it. Speak up in team meetings rather
+          than waiting to be asked.
+        </p>
+      </div>
+
+      <div class="block">
+        <h4>What actually happened</h4>
+        <p>
+          Some projects got documentation and others got verbal training. For my applications oriented help in May, my last form of assistance was
+          to create documentation and write about each flow created for the backend of the website. I detailed things like reason for the flow, all connections
+          to it, ownership rights, user access, a breakdown of how it worked, and a visual representation of how it looked. As for my infrastructure experience that
+          was less documentation heavy. When the migration was complete and it was starting to roll out to other teams I just assisted where I could, physically showing
+          them examples of how to navigate the site. Both ways, I displayed forms of communication, written, and verbal that helped the people around me, 
+          but also helped me learn and solidify my understanding of my findings.
+        </p>
+      </div>
+
+      <div class="verdict">
+        <h4>Against my measure of success</h4>
+        <p class="mb-0">
+          I would say both my written and spoken communication improved with these projects. I found myself feeling rather helpful to others when walking them 
+          through the RMM and I feel good about the people to come since I wrote physical documentation for the end of the applications work.
+        </p>
+      </div>
+    </div>
+
+    <!-- Goal 3 -->
+    <div class="goalcard" style="--accent:#fad337">
+      <div class="top">
+        <h3>Professionalism: personal organisation and time management</h3>
+      </div>
+
+      <div class="block">
+        <h4>The goal</h4>
+        <p>
+          To be reliable under a real workload with several tasks with different deadlines running at
+          once. Nothing should fall through the cracks and I should be building habits that outlast the work term.
+        </p>
+      </div>
+
+      <div class="block">
+        <h4>How I worked at it</h4>
+        <p>
+          Set priorities at the start of each week. Review at the end of each day what got done, what carries
+          over, and what the team needs to know. Raise it early when priorities are unclear, rather than
+          waiting until something was too late.
+        </p>
+      </div>
+
+      <div class="block">
+        <h4>What actually happened</h4>
+        <p>
+          I underestimated this goal more than the other two. I can't say I followed my plan every week but I can say
+          that no task got left behind. Sometimes it ate into my time more to meticulously plan out my days rather than to
+          jump right into my task, so planning sometimes was a mental note than a physical one. Regardless, I didnt have
+          any incidents of missed due dates or forgotten tasks. Everything that was asked of me was complete, and in an
+          orderly manner.
+        </p>
+      </div>
+
+      <div class="verdict">
+        <h4>Against my measure of success</h4>
+        <p class="mb-0">
+          I met deadlines without needing reminders and carried work without dropping any of it,
+          which is what I said I'd measure. The part I got wrong: I still underestimate how long anything
+          depending on other people's schedules takes, and I'd build that slack in deliberately next time
+          rather than discovering it.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I'd do differently -->
+  <section id="differently">
+    <p class="kicker">Reflection</p>
+    <h2>Three things I'd do differently</h2>
+
+    <div class="tiles">
+      <div class="tile" style="--tile:#f2f2f2">
+        <span class="tag">01</span>
+        <h3>Speak Up</h3>
+        <p>As an intern it can feel intimidating speaking up about things I require or thoughts I have when in meetings. I feel I'm pretty good about asking my colleagues questions whenever they pop up but I could definitely get better at voicing my ideas at the fear of being shot down, wrong, or just sounding silly.
+          Change and improvement is a process through trial and error, everything starts somewhere so I feel I could voice my ideas louder. Either way, its good to learn "why not" and best case scenario I can move forward with new projects.
+        </p>
+      </div>
+      <div class="tile" style="--tile:#f2f2f2">
+        <span class="tag">02</span>
+        <h3>Document while I'm in it</h3>
+        <p>When I was doing documentation last year and at the end of the applications project this year it was always my last step. When I got around to doing it I found myself needing to familiarize myself with the project again all the way starting at the beginning. Not only did it take a lot of time doing it all in one go
+          at the very end but it was tedious and boring. Getting through documentation as the project is ongoing the best I can would definitely keep my notes sharp, and eliminate the gruling task of doing one big write up at the end.
+        </p>
+      </div>
+      <div class="tile" style="--tile:#f2f2f2">
+        <span class="tag">03</span>
+        <h3>Don't be afraid to take on more</h3>
+        <p>I've been completing tasks as they are given to me throughout the term. Sometimes the tasks are small, sometimes theyre larger. Sometimes they stack and sometimes they come in a bit slow. As an intern the last thing you want to be is an inconvenience to the colleagues around you so sometimes it feels as though I'm being a
+          bother by asking people for more things to do. There's also the worry that I would eventually bite off than I can chew with my workload. I think going forward I could be asking for more work and overcome the fear of being an inconvenience because at the end of the day I know my coworkers are nothing short of helpful and I know
+          they will be more than understanding to aid me along the way.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conclusions -->
+  <section class="prose" id="conclusions">
+    <p class="kicker">Conclusions</p>
+    <h2>What to take away</h2>
+
+    <p>
+      If you described this page back to me, I'd want you to say: she spent a summer on a manufacturer's IT
+      team, moved from building applications to running infrastructure four weeks in, took an RMM migration
+      across the whole endpoint fleet, and can tell you specifically what she got wrong and what she changed
+      because of it.
+    </p>
+    <p>
+      My three goals were about thinking, communicating, and managing myself. What I didn't expect is how
+      much they turned out to go perfectly hand in hand. Thinking clearly is what gives you something
+      worth communicating. Managing your own time is what buys you the room to think in the first place. And
+      the technical skills came faster than any of the three. I learned those on the job in weeks. The other 
+      three took the whole term and still have room to grow and learn from.
+    </p>
+
+    <p class="pull" style="--accent:#3486eb">
+      I came in wanting to build applications. I'm leaving more interested in the systems underneath them.
+    </p>
+
+    <p>
+      That's the real outcome of switching disciplines inside a single term and shadowing the rest of the
+      department around it. I didn't just learn infrastructure, I found out where in it I want to be. Security
+      is my area of emphasis at Guelph, and having now watched my colleagues I'd love the chance to get my foot 
+      in the door. Not because it's the label on my degree, but because I've now seen what the questions actually 
+      look like. I'd rather know that now than after graduating.
+    </p>
+  </section>
+
+  <!-- Acknowledgments -->
+  <section id="acknowledgments">
+    <p class="kicker">Acknowledgments</p>
+    <h2>The team</h2>
+
+    <div class="thanks">
+      <div class="frame">
+        <!-- Replace with: <img src="team.jpg" alt="The Kingspan IT team"> -->
+        add team.jpg
+      </div>
+      <div class="thanks-body">
+        <p>
+          Thank you to Winston and Sam for handing a second-year student a real migration
+          instead of a safe project, and for making me truly feel apart of the team. Their patience and guidance
+          was and is greatly appreciated.
+        </p>
+        <p>
+          Thank you to the KA IT team for explaining things twice -- once
+          properly, and again a week later when I came back with a better question. To the applications team
+          for the start of the term and the infrastructure team for the rest of it. I got to see the same
+          department from two sides in four months because both of you made room for me.
+        </p>
+        <p>
+          And thank you to the University of Guelph Co-op office and the School of Computer Science for the
+          support behind their co-op program.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  </div>
+ </div>
+</main>
+
+<!-- Highlights the current section in the jump links -->
+<script>
+  (function () {
+    var links = document.querySelectorAll('.section-nav a');
+    var byId = {};
+    links.forEach(function (link) {
+      byId[link.getAttribute('href').slice(1)] = link;
+    });
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        links.forEach(function (link) { link.classList.remove('active'); });
+        if (byId[entry.target.id]) byId[entry.target.id].classList.add('active');
+      });
+    }, { rootMargin: '-25% 0px -65% 0px' });
+
+    document.querySelectorAll('.coop-body section[id]').forEach(function (section) {
+      observer.observe(section);
+    });
+
+    // keep the pinned rail from overlapping the footer
+    var nav = document.querySelector('.section-nav');
+    var footer = document.querySelector('.site-footer');
+    if (nav && footer) {
+      new IntersectionObserver(function (entries) {
+        nav.classList.toggle('is-hidden', entries[0].isIntersecting);
+      }).observe(footer);
+    }
+  })();
+</script>
+
+<!--FOOTER-->
+
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <img src="JM.png" alt="" width="120" height="120">
+      <div>
+        <h2>Jessica Morris</h2>
+        <p>Computer Science Co-op student</p>
+      </div>
+    </div>
+
+    <nav class="footer-links" aria-label="Contact">
+      <a href="mailto:jmorri34@uoguelph.ca">jmorri34@uoguelph.ca</a>
+      <a href="tel:+16479263043">647-926-3043</a>
+      <a href="www.linkedin.com/in/jessica-morris-78a39537b" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+
+  </div>
+
+  <p class="footer-fine">© 2026 Jessica Morris</p>
+</footer>
+
+</body>
+</html>

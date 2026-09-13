@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Tab Title -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jessica Morris ~ Portfolio</title>
+
+  <!-- Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="border-bottom mb-5">
+  <nav class="navbar py-0">
+    <div class="container-fluid px-4">
+
+      <div class="d-flex align-items-center gap-5">
+        <img src="JM.png" alt="" width="200" height="200">
+        <div>
+          <h1 class="mb-1">Jessica Morris</h1>
+          <p class="text-secondary mb-0">Welcome to my site.</p>
+        </div>
+      </div>
+
+      <!-- Hamburger Button -->
+      <button class="navbar-toggler border-0" type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#sideNav"
+              aria-controls="sideNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    </div>
+  </nav>
+</header>
+
+<!-- Side Bar Pop-Out -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="sideNav" aria-labelledby="sideNavLabel">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title h5 mb-0" id="sideNavLabel">Menu</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="d-flex flex-column gap-3">
+        <a href="about.html" class="btn btn-nav">About Me</a>
+        <a href="education.html" class="btn btn-nav">Education</a>
+        <a href="coop.html" class="btn btn-nav">Co-op S26</a>
+        <a href="resume.html" class="btn btn-nav">Resume</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<main class="container-fluid px-4">
+
+  <!-- Keyboard Hero -->
+  <section class="hero">
+  <div class="hero-inner">
+    <div class="screen"><span class="ch" style="animation-range: 60px 105px">h</span><span class="ch" style="animation-range: 115px 160px">e</span><span class="ch" style="animation-range: 170px 215px">l</span><span class="ch" style="animation-range: 225px 270px">l</span><span class="ch" style="animation-range: 280px 325px">o</span><span class="ch" style="animation-range: 335px 380px"> </span><span class="ch" style="animation-range: 390px 435px">w</span><span class="ch" style="animation-range: 445px 490px">o</span><span class="ch" style="animation-range: 500px 545px">r</span><span class="ch" style="animation-range: 555px 600px">l</span><span class="ch" style="animation-range: 610px 655px">d</span><span class="caret"></span></div>
+
+    <div class="keyboard" aria-hidden="true">
+      <div class="krow">
+        <div class="key">Q</div>
+        <div class="key">W</div>
+        <div class="key typed" style="animation-name: keypress; animation-range: 115px 160px">E</div>
+        <div class="key typed" style="animation-name: keypress; animation-range: 500px 545px">R</div>
+        <div class="key">T</div>
+        <div class="key">Y</div>
+        <div class="key">U</div>
+        <div class="key">I</div>
+        <div class="key typed" style="animation-name: keypress, keypress; animation-range: 280px 325px, 445px 490px">O</div>
+        <div class="key">P</div>
+      </div>
+      <div class="krow">
+        <div class="key">A</div>
+        <div class="key">S</div>
+        <div class="key typed" style="animation-name: keypress; animation-range: 610px 655px">D</div>
+        <div class="key">F</div>
+        <div class="key">G</div>
+        <div class="key typed" style="animation-name: keypress; animation-range: 60px 105px">H</div>
+        <div class="key">J</div>
+        <div class="key">K</div>
+        <div class="key typed" style="animation-name: keypress, keypress, keypress; animation-range: 170px 215px, 225px 270px, 555px 600px">L</div>
+      </div>
+      <div class="krow">
+        <div class="key">Z</div>
+        <div class="key">X</div>
+        <div class="key">C</div>
+        <div class="key">V</div>
+        <div class="key">B</div>
+        <div class="key">N</div>
+        <div class="key">M</div>
+      </div>
+      <div class="krow">
+        <div class="key space typed" style="animation-name: keypress; animation-range: 335px 380px"></div>
+      </div>
+    </div>
+</div>
+
+  <!-- Scroll Hint -->
+  <div class="scroll-cue" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 4 v14"></path>
+      <path d="M5 13 l7 7 7-7"></path>
+    </svg>
+  </div>
+
+</section>
+
+<!-- Cards -->
+<section class="folders">
+
+  <div class="folder-row">
+    <a href="about.html" class="folder" style="--folder: #de3131">
+    </a>
+    <div class="folder-desc">
+        <h2>About Me</h2>
+        <p>Second-year Computer Science student. Here's what I'm studying, what I'm curious about, and where I'm hoping to take it.</p>
+        <span class="folder-link">Open folder ←</span>
+    </div>
+  </div>
+
+  <div class="folder-row">
+    <a href="education.html" class="folder" style="--folder: #3486eb">
+    </a>
+    <div class="folder-desc">
+      <h2>Education</h2>
+      <p>My current education level, program, experiences, and the path that got me here.</p>
+      <span class="folder-link">Open folder →</span>
+    </div>
+  </div>
+
+  <div class="folder-row">
+    <a href="coop.html" class="folder" style="--folder: #fad337">
+    </a>
+    <div class="folder-desc">
+      <h2>Co-op S26</h2>
+      <p>My first work term. Here's what I did, what school prepared me for, and what I learnt.</p>
+      <span class="folder-link">Open folder ←</span>
+    </div>
+  </div>
+
+  <div class="folder-row">
+    <a href="resume.html" class="folder" style="--folder: green">
+    </a>
+    <div class="folder-desc">
+      <h2>Resume</h2>
+      <p>Everything above, condensed to one page. Here's the experience, knowledge and the skills</p>
+      <span class="folder-link">Open folder →</span>
+    </div>
+  </div>
+
+</section>
+</main>
+
+<!--FOOTER-->
+
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <img src="JM.png" alt="" width="120" height="120">
+      <div>
+        <h2>Jessica Morris</h2>
+        <p>Computer Science Co-op student</p>
+      </div>
+    </div>
+
+    <nav class="footer-links" aria-label="Contact">
+      <a href="mailto:jmorri34@uoguelph.ca">jmorri34@uoguelph.ca</a>
+      <a href="tel:+16479263043">647-926-3043</a>
+      <a href="www.linkedin.com/in/jessica-morris-78a39537b" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+
+  </div>
+
+  <p class="footer-fine">© 2026 Jessica Morris</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Tab Title -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jessica Morris ~ Portfolio</title>
+
+  <!-- Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="border-bottom mb-5">
+  <nav class="navbar py-0">
+    <div class="container-fluid px-4">
+
+      <div class="d-flex align-items-center gap-5">
+        <a href="index.html">
+            <img src="JM.png" alt="" width="200" height="200">
+        </a>
+        <div>
+          <h1 class="mb-1">Jessica Morris</h1>
+          <p class="text-secondary mb-0">Welcome to my site.</p>
+        </div>
+      </div>
+
+      <!-- Hamburger Button -->
+      <button class="navbar-toggler border-0" type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#sideNav"
+              aria-controls="sideNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    </div>
+  </nav>
+</header>
+
+<!-- Side Bar Pop-Out -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="sideNav" aria-labelledby="sideNavLabel">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title h5 mb-0" id="sideNavLabel">Menu</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="d-flex flex-column gap-3">
+        <a href="about.html" class="btn btn-nav">About Me</a>
+        <a href="education.html" class="btn btn-nav">Education</a>
+        <a href="coop.html" class="btn btn-nav">Co-op S26</a>
+        <a href="resume.html" class="btn btn-nav">Resume</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<main class="resume">
+
+  <div class="resume-head">
+    <div>
+      <p class="kicker">Computer Science Co-op &middot; University of Guelph</p>
+      <h2>Resume</h2>
+    </div>
+
+    <div class="resume-actions">
+      <a class="btn-pdf" href="resume.pdf" download="Jessica-Morris-Resume.pdf">
+        &#8595;&nbsp; Download PDF
+      </a>
+      <a class="btn-pdf secondary" href="resume.pdf" target="_blank" rel="noopener">
+        Open in new tab
+      </a>
+    </div>
+  </div>
+
+  <!-- Inline preview, with a link for browsers that won't render PDFs -->
+  <div class="pdf-frame">
+    <object data="resume.pdf#view=FitH" type="application/pdf" aria-label="Resume preview">
+      <p class="pdf-fallback">
+        This browser can&rsquo;t display the PDF inline.
+        <a class="btn-pdf" href="resume.pdf" download="Jessica-Morris-Resume.pdf">&#8595;&nbsp; Download PDF</a>
+      </p>
+    </object>
+  </div>
+
+</main>
+
+<!--FOOTER-->
+
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <img src="JM.png" alt="" width="120" height="120">
+      <div>
+        <h2>Jessica Morris</h2>
+        <p>Computer Science Co-op student</p>
+      </div>
+    </div>
+
+    <nav class="footer-links" aria-label="Contact">
+      <a href="mailto:jmorri34@uoguelph.ca">jmorri34@uoguelph.ca</a>
+      <a href="tel:+16479263043">647-926-3043</a>
+      <a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+
+  </div>
+
+  <p class="footer-fine">&copy; 2026 Jessica Morris</p>
+</footer>
+
+</body>
+</html>

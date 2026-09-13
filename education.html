@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Tab Title -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jessica Morris ~ Portfolio</title>
+
+  <!-- Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="border-bottom mb-5">
+  <nav class="navbar py-0">
+    <div class="container-fluid px-4">
+
+      <div class="d-flex align-items-center gap-5">
+        <a href="index.html">
+            <img src="JM.png" alt="" width="200" height="200">
+        </a>
+        <div>
+          <h1 class="mb-1">Jessica Morris</h1>
+          <p class="text-secondary mb-0">Welcome to my site.</p>
+        </div>
+      </div>
+
+      <!-- Hamburger Button -->
+      <button class="navbar-toggler border-0" type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#sideNav"
+              aria-controls="sideNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    </div>
+  </nav>
+</header>
+
+<!-- Side Bar Pop-Out -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="sideNav" aria-labelledby="sideNavLabel">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title h5 mb-0" id="sideNavLabel">Menu</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="d-flex flex-column gap-3">
+        <a href="about.html" class="btn btn-nav">About Me</a>
+        <a href="education.html" class="btn btn-nav">Education</a>
+        <a href="coop.html" class="btn btn-nav">Co-op S26</a>
+        <a href="resume.html" class="btn btn-nav">Resume</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+<!-- Education Timeline -->
+  <section class="py-5">
+
+    <div class="timeline">
+      <div class="timeline-line"></div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-logo">
+          <img src="kingspan_logo.png" alt="Kingspan">
+        </div>
+        <p class="text-secondary mb-1">2025 – Present</p>
+        <h3 class="h5">IT Intern</h3>
+        <h6 class="mb-2">Kingspan Insulated Panels</h6>
+        <p> Integrated in the IT team</p>
+        <p> Shadowed: System Admin, System Engineer, Service Delivery, Security, and Applications</p>
+        <p> Areas of work: Power app development, UI design, infrastructure, network management, flow creation and integration</p>
+    </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-logo">
+          <img src="guelph_logo.png" alt="University of Guelph">
+        </div>
+        <p class="text-secondary mb-1">2024 – Present</p>
+        <h3 class="h5">Bachelor of Computer Science Co-op</h3>
+        <h6 class="mb-2">University of Guelph </h6>
+        <p> Dean's List 3x</p>
+        <p> Courses Completed: Chemistry I, Intro to Accounting, Discrete Structures I & II, Calculus I, Linear Algebra, Programming I & II, Data Structures, Microcomputing, Operating Systems, Proofs Sets and Numbers, History of Science and Technology, UI Design, Web Design, Ethics of AI, Object Oriented Programming, Software System Development and Integration, Software for Legacy Sytems, Analysis and Design of Computer Algorithms</p>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-logo">
+          <img src="carter_logo.jpg" alt="Cardinal Carter Catholic High School">
+        </div>
+        <p class="text-secondary mb-1">2020 – 2024</p>
+        <h3 class="h5">Cardinal Carter Catholic Highschool</h3>
+        <p class="mb-2">Ontario Secondary School Diploma</p>
+        <p class="mb-2">Honour Roll</p>
+        <p class="mb-2">Ontario Scholar</p>
+        <p class="mb-2">Awards: Visual Arts Award, Photography Award, Computer Science Award</p>
+        <p class="mb-2">Clubs: Chaplaincy Councel member</p>
+      </div>
+    </div>
+  </section>
+
+<!--FOOTER-->
+
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <img src="JM.png" alt="" width="120" height="120">
+      <div>
+        <h2>Jessica Morris</h2>
+        <p>Computer Science Co-op student</p>
+      </div>
+    </div>
+
+    <nav class="footer-links" aria-label="Contact">
+      <a href="mailto:jmorri34@uoguelph.ca">jmorri34@uoguelph.ca</a>
+      <a href="tel:+16479263043">647-926-3043</a>
+      <a href="https://www.linkedin.com/in/jessica-morris-78a39537b" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+
+  </div>
+
+  <p class="footer-fine">&copy; 2026 Jessica Morris</p>
+</footer>
+
+</body>
+</html>
