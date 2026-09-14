@@ -1338,3 +1338,319 @@ html { scroll-behavior: smooth; }
   .footer-inner { flex-direction: column; align-items: flex-start; gap: 2rem; }
   .footer-links { align-items: flex-start; }
 }
+
+/* ==========================================================================
+   MOBILE + TABLET
+   Paste this at the very END of style.css. Everything here is inside a
+   max-width media query, so the desktop layout is unchanged.
+   ========================================================================== */
+
+/* ---------- global safety net ---------- */
+
+@media (max-width: 1024px) {
+  html, body { overflow-x: clip; }          /* clip, not hidden: keeps sticky header working */
+  html { -webkit-text-size-adjust: 100%; }  /* stops iOS inflating text in landscape */
+  img, object { max-width: 100%; }
+}
+
+/* offcanvas is 400px by default — wider than an iPhone */
+@media (max-width: 575.98px) {
+  .offcanvas { --bs-offcanvas-width: min(320px, 85vw); }
+}
+
+/* ---------- touch: kill sticky hover, add tap feedback ---------- */
+
+@media (hover: none) {
+  .folder:hover { transform: none; box-shadow: 0 6px 14px rgba(0,0,0,0.14); }
+  .tile:hover   { transform: none; box-shadow: 0 6px 14px rgba(0,0,0,0.13); }
+  .ph:hover     { transform: none; box-shadow: 0 8px 18px rgba(0,0,0,0.10); z-index: auto; }
+  .ph:hover img { transform: none; }
+  .btn-pdf:hover { transform: none; }
+
+  .gallery .shot:hover .frame,
+  .imgband .shot:hover .frame { transform: none; }
+  .gallery .shot:nth-child(odd):hover  .frame { transform: rotate(-1.2deg); }
+  .gallery .shot:nth-child(even):hover .frame { transform: rotate(1.4deg); }
+
+  /* presses respond instead */
+  .folder:active  { transform: scale(0.97); }
+  .tile:active    { transform: scale(0.98); }
+  .ph:active      { transform: scale(0.98); }
+  .btn-pdf:active { transform: scale(0.96); }
+  .btn-nav:active { transform: scale(0.97); }
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  header .navbar .container-fluid { flex-wrap: nowrap; gap: 0.75rem; }
+  header .navbar .container-fluid > .d-flex { min-width: 0; }
+  header h1 { overflow-wrap: anywhere; }
+  .navbar-toggler { flex: 0 0 auto; }
+}
+
+/* iPad */
+@media (min-width: 768px) and (max-width: 1024px) {
+  header .navbar .container-fluid > .d-flex { gap: 1.5rem !important; }
+  header .navbar img { width: 104px; height: 104px; }
+  header h1 { font-size: 1.9rem; }
+}
+
+/* iPhone */
+@media (max-width: 767.98px) {
+  header.mb-5 { margin-bottom: 1.75rem !important; }
+  header .navbar .container-fluid { padding-inline: 1rem !important; }
+  header .navbar .container-fluid > .d-flex { gap: 0.8rem !important; }
+  header .navbar img { width: 56px; height: 56px; }
+  header h1 { font-size: 1.2rem; margin-bottom: 0 !important; }
+  header .navbar .text-secondary { display: none; }
+
+  .navbar-toggler { --bs-navbar-toggler-font-size: 1.4rem; padding: 0.55rem 0.4rem; }
+  .btn-nav { padding: 1rem 1.15rem; font-size: 1.05rem; }
+}
+
+@media (max-width: 400px) {
+  header .navbar img { width: 48px; height: 48px; }
+  header h1 { font-size: 1.05rem; }
+}
+
+/* ==========================================================================
+   HOME — HERO KEYBOARD
+   svh instead of vh so the iOS toolbar can't eat the keyboard.
+   Key size is capped by vh as well as vw so landscape still fits.
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .hero { height: 190svh; }
+  .hero-inner {
+    top: 84px;
+    height: calc(100svh - 84px);
+    gap: 1.75rem;
+    padding: 3rem 1rem 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .keyboard { gap: 8px; padding: 16px; }
+  .krow     { gap: 8px; }
+  .key      { --size: clamp(34px, min(7.2vw, 9vh), 68px); }
+}
+
+@media (max-width: 767.98px) {
+  .hero-inner { top: 72px; height: calc(100svh - 72px); padding: 2.5rem 1rem 1.5rem; }
+
+  .screen { font-size: clamp(1.35rem, 6.4vw, 2.2rem); }
+
+  .keyboard { gap: 5px; padding: 10px; border-radius: 14px; }
+  .krow     { gap: 5px; }
+  .key      { --size: clamp(20px, min(6.9vw, 8.5vh), 52px); border-radius: 7px; }
+
+  .scroll-cue { bottom: 1.25rem; }
+  .scroll-cue svg { width: 22px; height: 22px; }
+}
+
+/* landscape phone: short screen, keep it all above the fold */
+@media (orientation: landscape) and (max-height: 500px) {
+  .hero-inner { padding-top: 1rem; gap: 1rem; }
+  .screen { font-size: 1.45rem; }
+}
+
+/* ==========================================================================
+   HOME — FOLDER CARDS
+   ========================================================================== */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .folders { padding-inline: 1.5rem; }
+  .folder-row { gap: 2rem; }
+  .folder { flex: 0 0 220px; height: 160px; }
+}
+
+@media (max-width: 767.98px) {
+  main.container-fluid { padding-inline: 0 !important; }
+  .folders { padding-inline: 1.1rem; }
+
+  .folder-row,
+  .folder-row:nth-child(even) {
+    text-align: left;
+    gap: 1.1rem;
+    margin-bottom: 2.75rem;
+  }
+
+  .folder {
+    width: 100%;
+    max-width: none;
+    height: 118px;
+    margin-top: 22px;
+    padding: 1rem 1.2rem;
+  }
+  .folder::before { width: 96px; height: 24px; top: -24px; }
+
+  .folder-desc    { font-size: 1.02rem; line-height: 1.6; }
+  .folder-desc h2 { font-size: 1.25rem; }
+  .folder-desc p  { margin-bottom: 0.6rem; }
+}
+
+/* ==========================================================================
+   EDUCATION — TIMELINE
+   Logo moves out of the left gutter and sits above each entry, which
+   gives the text back ~100px on a phone.
+   ========================================================================== */
+
+@media (max-width: 767.98px) {
+  .timeline {
+    padding-left: 3.25rem;
+    padding-right: 1.15rem;
+    padding-block: 2rem 1rem;
+  }
+
+  .timeline-line { left: 1.25rem; }
+
+  .timeline-logo {
+    position: static;
+    width: 56px;
+    height: 56px;
+    margin-bottom: 0.85rem;
+    border-radius: 12px;
+    padding: 7px;
+  }
+
+  .timeline-item { padding-bottom: clamp(4.5rem, 12vh, 8rem); }
+  .timeline-item::before { left: -2.4rem; top: 20px; }
+  .timeline-item h3 { font-size: 1.15rem; }
+  .timeline-item p  { font-size: 0.97rem; line-height: 1.6; }
+}
+
+/* ==========================================================================
+   ABOUT + CO-OP shared
+   ========================================================================== */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about, .coop, .resume { padding-inline: 1.75rem; }
+}
+
+@media (max-width: 767.98px) {
+  .about, .coop, .resume { padding-inline: 1.15rem; }
+
+  .about section, .coop section { padding-block: 2.75rem; }
+  .about h2, .coop h2 { margin-bottom: 1.25rem; }
+
+  .lead     { font-size: 1.12rem; max-width: none; }
+  .prose p  { font-size: 1rem; line-height: 1.7; }
+  .kicker   { font-size: 0.72rem; }
+
+  .about-intro { gap: 1.5rem; }
+  .about-portrait { max-width: none; aspect-ratio: 4 / 5; border-radius: 16px; }
+
+  .tiles { gap: 1rem; }
+  .tile  { padding: 1.3rem; border-radius: 14px; }
+  .tile p, .tile ul { font-size: 0.98rem; }
+
+  .pull {
+    font-size: 1.25rem;
+    padding-left: 1rem;
+    border-left-width: 6px;
+    margin: 1.75rem 0;
+    max-width: none;
+  }
+
+  .gallery-group { margin-top: 2.5rem; }
+  .group-label   { margin-bottom: 0.9rem; gap: 0.6rem; }
+  .photogrid     { column-gap: 0.8rem; }
+  .pg-fashion    { gap: 0.9rem; }
+  .pg-tight      { gap: 0.45rem; }
+  .ph            { border-radius: 12px; }
+}
+
+/* anchor links land below the header on browsers without scroll-driven animation */
+@media (max-width: 767.98px) {
+  @supports not (animation-timeline: scroll()) {
+    .coop section, .about section { scroll-margin-top: 96px; }
+  }
+}
+
+/* ==========================================================================
+   CO-OP — jump nav, stats, spotlight
+   ========================================================================== */
+
+@media (max-width: 767.98px) {
+  .section-nav {
+    padding: 1.25rem 0 0.4rem;
+    gap: 0.2rem;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+  }
+  .section-nav::-webkit-scrollbar { display: none; }
+  .section-nav a { font-size: 0.9rem; padding: 0.45rem 0.6rem; }
+
+  .stats  { gap: 0.85rem; }
+  .stat   { padding: 1.15rem 1.2rem; border-left-width: 6px; border-radius: 14px; }
+  .stat b { font-size: 1.9rem; }
+
+  .spotlight { border-radius: 18px; }
+  .spotlight h3 { font-size: 1.3rem; }
+  .steps li { padding-left: 2.75rem; }
+  .steps li::before { width: 1.9rem; height: 1.9rem; top: 0; }
+
+  .goalcard { border-radius: 16px; border-top-width: 7px; margin-bottom: 1.25rem; }
+  .goalcard h3 { font-size: 1.2rem; }
+  .verdict { padding: 1rem 1.1rem; }
+
+  .imgband { gap: 1.5rem; margin-bottom: 2rem; }
+  .thanks  { border-radius: 18px; padding: 1.25rem; gap: 1.5rem; }
+}
+
+/* ==========================================================================
+   RESUME
+   iOS Safari won't render a PDF inside <object>, so the frame is replaced
+   with the two buttons plus a line of explanation on phones.
+   ========================================================================== */
+
+@media (max-width: 767.98px) {
+  .resume-head { margin-bottom: 1.5rem; }
+  .resume-actions { width: 100%; gap: 0.6rem; }
+  .btn-pdf { width: 100%; justify-content: center; padding: 0.95rem 1.1rem; }
+
+  .pdf-frame { display: none; }
+
+  .resume::after {
+    content: "Phone browsers can't preview PDFs inline — use the buttons above to open or download the resume.";
+    display: block;
+    padding: 1.5rem 1.25rem;
+    border: 1px dashed #d4d4d4;
+    border-radius: 16px;
+    background: #fafafa;
+    color: #777;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .pdf-frame { aspect-ratio: 3 / 4; }
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .site-footer  { padding-inline: 1.5rem; }
+  .footer-inner { padding-inline: 0; }
+  .footer-fine  { padding-inline: 0; }
+}
+
+@media (max-width: 767.98px) {
+  .site-footer  { margin-top: 3.5rem; padding: 2.25rem 1.15rem 2rem; }
+  .footer-inner { padding-inline: 0; gap: 1.5rem; }
+  .footer-brand { gap: 1rem; }
+  .footer-brand img { width: 64px; height: 64px; }
+  .footer-brand h2  { font-size: 1.15rem; }
+  .footer-brand p   { font-size: 0.95rem; }
+  .footer-links   { gap: 0.9rem; }
+  .footer-links a { font-size: 1rem; }
+  .footer-fine    { padding-inline: 0; margin-top: 1.75rem; }
+}
